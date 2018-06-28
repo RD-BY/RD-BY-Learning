@@ -1,0 +1,85 @@
+一、Spring Boot的特点：
+    1.创建独立的Spring application。
+    2.能够使用内嵌的Tomcat，Jetty 或者是 Undertow，不需要部署war
+    3.使用starter pom来简化maven的配置、
+    4.可以自动配置Spring
+    5.提供了一些生产环境的特性
+    6.没有代码生成和XML配置的要求。
+二、入门案例：
+   1. 通过Spring initialization创建SpringBoot项目
+   2.通过Maven工程构建SpringBoot项目。具体步骤如下：
+      1）创建一个Maven工程。
+      2）添加依赖----在pom文件中
+      
+                      <!-- 定义公共资源版本 -->
+                <parent>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-parent</artifactId>
+                    <version>1.5.6.RELEASE</version>
+                    <relativePath /> 
+                </parent>
+
+                <properties>
+                    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+                    <java.version>1.8</java.version>
+                </properties>
+
+                <dependencies>
+                    <!-- 上边引入 parent，因此 下边无需指定版本 -->
+                    <!-- 包含 mvc,aop 等jar资源 -->
+                    <dependency>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-web</artifactId>
+                    </dependency>
+                </dependencies>
+
+                <build>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.springframework.boot</groupId>
+                            <artifactId>spring-boot-maven-plugin</artifactId>
+                        </plugin>
+                    </plugins>
+                </build>
+
+      3）在src/main/resources下创建目录和配置文件
+        application.properties ：用来配置项目运行所需要的配置数据
+        static目录：用来存放一些静态资源，比如图片，页面等
+        temples：用来存放一些模板文件。
+       4）创建启动类：在src/main/java/下创建一个包，在这个包下创建SpringBootApplication.Java文件，在文件中写入项目的启动代码：
+                public class SpringBootApplication(String[]args){
+                  SpringApplication.run(SpringBootApplication.class,args);
+                }
+       5）案例演示：1>在controller包下创建一个TestController，设置拦截地址，内容
+                   2> SpringbootApplication 文件中右键 Run as -> Java Application。当看到 “Tomcat started on port(s): 8080 (http)” 字样说明启动成功。
+                   3>打开浏览器访问 http://localhost:8080/helloworld，结果如下：
+                
+三、SpringBoot对于日志的处理
+      在SpringBoot中，日志是默认采用logback进行处理的，logback是由log4j创始人设计的又一个开源日志组件。
+      1.logback现在是分成三个模块的：分别是logback-core,logback-classic以及logback-access.其中logback-core是最基础的模块。logback-classic是log4j的一个改良版本。它完全实现了SLF4JAP.
+      logback-access访问模块和Server容器集成提供了通过HTTP来访问的日志功能。
+      配置过程如下所示：
+      1）在pom文件中引入logback的依赖包
+          <dependency>  
+               <groupId>ch.qos.logback</groupId>  
+               <artifactId>logback-classic</artifactId>  
+               <version>1.0.11</version>   
+           </dependency>
+       2）整个项目的核心是logback.xml.他需要被放在classpath根目录下的src/main/resources/logback.xml
+       
+
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <configuration>
+                        <include resource="org/springframework/boot/logging/logback/base.xml"/>
+                        <logger name="com.xiaofangtech.sunt.controller" level="WARN" additivity="false">
+                            <appender-ref ref="CONSOLE"/>
+                            <appender-ref ref="FILE"/>
+                        </logger>
+                        <logger name="com.xiaofangtech.sunt.helper" level="WARN" additivity="false">
+                            <appender-ref ref="CONSOLE"/>
+                            <appender-ref ref="FILE"/>
+                        </logger>
+                     </configuration>
+       
+       
