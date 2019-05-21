@@ -1,0 +1,51 @@
+jpa注解
+@Entity   标识实体类，具备和数据表的映射关系  但是表名就是类名
+@Table(name="")标识数据表名    定义生成的表名
+上面两个注解一般联合使用
+
+@Id   映射主键
+@GeneratedValue(strategy="") 用来标注主键的生成策略 通过strategy属性来指定，默认情况下jpa会自动选择：SQLServer为identity（自增）  MySQL为autoincrement（自增）
+							SEQUENCE针对于oracle,通过序列化赖生成主键，并通过@SequenceGenerator来指定序列名
+							Table通过另一张表来生成主键
+如何使用Table策略生成主键：
+//生成器
+@TableGenerator(name="ID_GENERATOM",//生成器名字对应下面的ID_GENERATOM
+				table="jpa_id_generators",//设置使用哪个表生成主键值
+				pkColumnName="PK_NAME",	pkColumnValue="CUSTOMER_ID",  //使用这两个字段来确定使用的那张表中的哪行信息
+				valueColumNAME="PK_VALUE",//获取对应那行中的value值
+				allocationSize=100) //主键生成 的步长
+				
+@GeneratedValue(strategy=GenerationType.TABLE,generator="ID_GENERATOM")
+//策略为Table    生成器为：ID_GENERATOM
+
+							
+
+@Basic  基本注解，标识一个简单的属性，可以不加，不加时默认为@Basic
+@Column  可以做精确映射，例：unique  唯一约束，nullable 非空，length  数据大小，name   数据表列名
+
+@Transient  在程序中不需要映射到表中时，使用该注解
+
+@Temporal 可以使用该注解调整时间数据的精度，默认为dateTime，其余还有：DATE，TIME
+
+
+JPA 的 API
+
+
+1.EntityManagerFactory的方法
+Persistence 
+	1）createEntityManager()用来获取EntityManagerFactory的实例
+		1> 持久化单元名字
+		2>持久化单元名字，获取EntityManagerFactory属性的Map
+	2）close()
+		用来关闭EntityManagerFactory
+2.EntityManager的方法
+	1）find  
+	2）getReference
+	3)Persistence
+	4)remove
+
+
+
+
+
+
