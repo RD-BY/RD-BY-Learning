@@ -1,0 +1,231 @@
+一路积累的网址，有空没空都要去逛逛，码农就应该好好学习，天天向上才跟得上时代的步伐。
+
+涵盖了各个方面的信息，不管你是做前端的还是做后端服务的都能从这些网站上找到你需要的东西。
+
+闲暇时间多看看绝对有好处~~~，当然这是废话啦！！！！
+
+
+
+专业社区：
+
+1. stack overflow http://stackoverflow.com/
+
+2. IBM developerworks         http://www.ibm.com/developerworks/
+
+3. InfoQhttp://www.infoq.com/cn/
+
+4. 推酷http://www.tuicool.com/
+
+5. 博客园http://kb.cnblogs.com/
+
+6. CSDNhttp://www.csdn.net/
+
+7. importnew http://www.importnew.com/
+
+8. Java123http://www.java123.net/
+
+9. web开发者http://www.admin10000.com/
+
+10. 开源中国http://www.oschina.net/
+
+11. Java频道http://developer.51cto.com/java/
+
+12. Ubuntu社区http://www.canonical.com/
+
+13. Android开发社区http://www.eoeandroid.com/
+
+14. 软件测试http://wenku.spasvo.com/
+
+
+
+大数据
+
+1. 数客http://www.shookr.com/
+
+2. 36大数据http://www.36dsj.com/
+
+3. 伯乐在线http://blog.jobbole.com/
+
+
+
+IT、潮流媒体社区
+
+1. 虎嗅http://www.huxiu.com/
+
+2. 钛媒体http://www.tmtpost.com/
+
+3. 极客公园http://www.geekpark.net/
+
+4. 知乎http://www.zhihu.com/
+
+5. 51ctohttp://www.51cto.com/
+
+
+
+软件集合
+
+1. Ubuntu软件大全http://packages.ubuntu.com/
+
+2. Ubuntu软件大全2 http://www.ubuntusoft.com/
+
+3. Androidhttp://mirrors.neusoft.edu.cn/android/repository/
+
+4. Android sdkhttp://www.cnblogs.com/bjzhanghao/archive/2012/11/14/2769409.html
+
+5. Ubuntu主题http://www.ubuntuthemes.org/
+
+6. Apache软件大全http://archive.apache.org/dist/
+
+7. 深度软件http://www.deepin.org/
+
+8. 异元素http://www.iplaysoft.com/
+
+
+
+前端开发
+
+1. jQuery插件大全http://www.jq22.com/
+
+2. Bootswatchhttp://bootswatch.com/
+
+3. usesoso设计师http://so.uehtml.com/
+
+4. UIhttp://www.ui.cn/
+
+5. UI制造者http://www.uimaker.com/
+
+6. W3CPlushttp://www.w3cplus.com/
+
+7. 356psdhttp://365psd.com/
+
+9. UI社http://www.uishe.cn/
+
+10. bootstraphttp://www.bootcss.com/
+
+11. 前段观察http://www.qianduan.net/
+
+12. 移动应用前段开发         http://www.exmobi.cn/agile/index.html
+
+13. jQuery minihttp://www.miniui.com/
+
+
+
+项目托管
+
+1. OSChina githttp://git.oschina.net/
+
+2. githubhttps://github.com/
+
+3. gitcafehttps://gitcafe.com/
+
+4. codinghttps://coding.net/
+
+5. OKSVNhttp://www.oksvn.com/
+
+6. 
+
+
+
+
+
+开放平台
+
+1. 新浪http://sae.sina.com.cn/?m=front
+
+http://open.weibo.com/
+
+2. 腾讯http://open.qq.com/
+
+https://mp.weixin.qq.com/
+
+https://open.weixin.qq.com/
+
+3. 百度http://developer.baidu.com/
+
+4. 淘宝http://open.taobao.com/
+
+5. CSDNhttp://open.csdn.net/
+
+6. 搜狐http://open.sohu.com/
+
+
+
+
+
+免费源码
+
+1. 最代码http://www.zuidaima.com/
+
+2. 源码之家http://www.mycodes.net/
+
+3. Java项目分享         http://www.java1234.com/a/kaiyuan/javaWeb/
+
+4. 模板网http://www.wangjie.org/
+
+5. 源码天空http://www.codesky.net/article/webarch/index.html
+
+6. 源码爱好者         http://www.codefans.net/
+
+7. 素材网http://www.xwcms.net/
+
+8. dede CMShttp://www.dedecms.com/
+
+
+
+
+
+小图片大全
+
+1. easyiconhttp://www.easyicon.net/
+
+2. 千图网http://www.58pic.com/
+
+3. 云图网http://yuntuwang.net/
+
+4. 贴图库http://tietuku.com/
+
+5. findicons         http://findicons.com/
+
+
+
+
+
+在线绘图、切图
+
+1. processon         https://www.processon.com/
+
+2. 切图http://kuaiqie.qdsay.com/
+
+
+
+
+
+在线开源CDN库
+
+1. BootCDNhttp://www.bootcdn.cn/
+
+2. 百度CDNhttp://developer.baidu.com/wiki/index.php?title=docs/cplat/libs
+
+
+
+
+
+其他网址
+
+1. MyEclipse中文官网                 http://www.my-eclipse.cn/
+
+2. 创意http://shixian.com/
+
+3. TEDhttp://www.ted.com/
+
+4. 哔哩哔哩www.bilibili.com
+
+5. ACFunhttp://www.acfun.tv/
+
+6. ibeginner         http://ibeginner.sinaapp.com/
+
+
+
+移动端界面测试
+
+1. http://s.wei12.com/
